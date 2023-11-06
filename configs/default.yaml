@@ -1,0 +1,101 @@
+
+# prepare parameters
+algorithm_name: 'mappo'
+experiment_name: 'check'
+seed: 1
+seed_specify: False
+running_id: 1
+cuda: True
+cuda_deterministic: True
+n_training_threads: 1
+n_rollout_threads: 32
+n_eval_rollout_threads: 1
+n_render_rollout_threads: 1
+num_env_steps: 10000000
+user_name: 'wszhao_aalto'
+
+# env parameters
+env_name: 'mujoco'
+use_obs_instead_of_state: False
+
+# replay buffer parameters
+episode_length: 200
+
+# network parameters
+share_policy: True
+use_centralized_V: True
+stacked_frames: 1
+use_stacked_frames: False
+hidden_size: 64
+layer_N: 1
+use_ReLU: True
+use_popart: False
+use_valuenorm: True
+use_feature_normalization: True
+use_orthogonal: True
+gain: 0.01
+
+# recurrent parameters
+use_naive_recurrent_policy: False
+use_recurrent_policy: False
+recurrent_N: 1
+data_chunk_length: 10
+
+# optimizer parameters
+lr: 5.0e-4
+critic_lr: 5.0e-4
+opti_eps: 1.0e-5
+weight_decay: 0
+std_x_coef: 1
+std_y_coef: 0.5
+
+# trpo parameters
+kl_threshold: 0.01
+ls_step: 10
+accept_ratio: 0.5
+
+# ppo parameters
+ppo_epoch: 15
+use_clipped_value_loss: True
+clip_param: 0.2
+num_mini_batch: 1
+entropy_coef: 0.01
+# entropy_coef: 0.05
+value_loss_coef: 1
+use_max_grad_norm: True
+max_grad_norm: 10.0
+use_gae: True
+gamma: 0.99
+gae_lambda: 0.95
+use_proper_time_limits: False
+use_huber_loss: True
+use_value_active_masks: True
+use_policy_active_masks: True
+huber_delta: 10.0
+
+# run parameters
+use_linear_lr_decay: False
+save_interval: 1
+log_interval: 5
+
+# pretrained parameters
+model_dir: null
+
+# eval parameters
+use_eval: False
+eval_interval: 10
+eval_episodes: 32 # 4x8 threads
+
+# render parameters
+save_gifs: False
+use_render: False
+render_episodes: 5
+ifi: 0.1
+
+#logs
+use_wandb: True
+use_writter: True
+
+# hyperparameters
+use_adv_nml: True
+

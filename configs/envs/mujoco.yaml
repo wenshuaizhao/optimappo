@@ -1,0 +1,50 @@
+
+#default parameters
+add_move_state: False
+add_local_obs: False
+add_distance_state: False
+add_enemy_action_state: False
+add_agent_id: False
+add_visible_state: False
+add_xy_state: False
+
+# parameters from argument
+env_name: "mujoco"
+algorithm_name: "mappo"
+# scenario: "Humanoid-v2"
+# agent_conf: "17x1"
+scenario: "Ant-v2"
+agent_conf: "2x4"
+# scenario: "HalfCheetah-v2"
+# agent_conf: "6x1"
+# scenario: "Walker2d-v2"
+# agent_conf: "6x1"
+
+agent_obsk: 2
+# lr: 5.0e-6
+lr: 5.0e-5
+# lr: 1.0e-5
+critic_lr: 5.0e-3
+std_x_coef: 1
+std_y_coef: 5.0e-1
+running_id: 1
+n_training_threads: 32
+n_rollout_threads: 32
+num_mini_batch: 40
+episode_length: 1000
+num_env_steps: 40000000
+ppo_epoch: 5
+kl_threshold: 1.0e-4
+use_value_active_masks: True
+use_eval: True
+add_center_xy: False
+use_state_agent: False
+share_policy: False
+
+# algo parameter
+# use_opt: False
+# use_positive_opt: True
+use_nonnegtive_opt: False
+# use_adaopt: True
+opt_factor: 2
+

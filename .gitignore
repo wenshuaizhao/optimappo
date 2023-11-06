@@ -1,0 +1,12 @@
+__pycache__
+.vscode/
+results/
+prj_env/
+pkgs/
+**/.cache/
+**/.config/
+**/.local/
+**/.netrc
+**/.mujoco
+**/cluster_sh_scripts/
+**/local_sh_scripts/
