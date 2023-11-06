@@ -11,7 +11,6 @@ import numpy as np
 import setproctitle
 import torch
 import wandb
-wandb.login(key='42e7d207d3284a031abccd90fec5d448784c4bad')
 
 # code repository sub-packages
 from configs.matrix_config import get_config

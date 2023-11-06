@@ -16,7 +16,6 @@ from types import SimpleNamespace as SN
 from envs.ma_mujoco.multiagent_mujoco.mujoco_multi import MujocoMulti
 from envs.env_wrappers import ShareSubprocVecEnv, ShareDummyVecEnv
 from datetime import datetime
-wandb.login(key='42e7d207d3284a031abccd90fec5d448784c4bad')
 
 """Train script for Mujoco."""
 
