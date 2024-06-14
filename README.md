@@ -1,4 +1,4 @@
-# Optimistic Multi-Agent Policy Gradient for Cooperative Tasks
+# Optimistic Multi-Agent Policy Gradient
 This is the code for optimappo ([paper](https://arxiv.org/pdf/2311.01953), [website](https://wenshuaizhao.github.io/optimappo/)) which enables otpimism in multi-agent policy gradient methods by shaping the advantage estimation. This is a simple, but effective way to improve MAPPO on deterministic tasks by overcoming the **relative overgeneralization** problem.
 ## Installation
 - Please refer to [MAPPO](https://github.com/marlbenchmark/on-policy) to install the python virtural environment. 
